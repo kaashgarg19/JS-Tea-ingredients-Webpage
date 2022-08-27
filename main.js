@@ -1,3 +1,10 @@
+function imageHover() {
+    document.getElementById("image").style.width ="50%" 
+ } 
+  
+  function imageNormal() {          
+    document.getElementById("image").style.width = "100%";
+  }
 function ingredientsHover() {
     document.getElementById("ingredients").style.fontSize = "300%";
   } 
