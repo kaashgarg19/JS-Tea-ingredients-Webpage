@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe of Tea Making</title>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="main.css">
-</head>
-
-<body>
+    <body>
+    <div id="container">
     <header>
         <h1>How to make a Tea</h1>
 
-        Image
+       <img src="tea.jpg" alt="A tea pic" class="aman">
         <p>Tea is an aromatic beverage prepared by pouring hot or boiling water over cured or fresh leaves of Camellia
             sinensis,
             an evergreen shrub native to China, India and other East Asian countries.
@@ -21,8 +22,8 @@
             After water, it is the most widely consumed drink in the world</p>
 
     </header>
-    <section>
-        <h2>Ingrident</h2>
+    <section  onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+        <h2>Ingrident <i id="ingredients" class="fa fa-coffee" aria-hidden="true"></i></i></h2>
         <ul>
             <li>Tea Bag</li>
             <li>Water</li>
@@ -30,10 +31,10 @@
             <li>Sugar/Honey (optional)</li>
         </ul>
     </section>
-    <section>
-        <h2>Prepration </h2>
+    <section  onmouseover="preparationHover()" onmouseout="preparationNormal()">
+        <h2>Prepration<i  id="preparation" class="fa fa-check-circle-o" aria-hidden="true"></i></h2>
         <ol>
-            <li>Treat your water kindly:
+            <li>Treat your water kindly:  
                 Run the tap a little so the water's nicely aerated, and only boil it once to keep the oxygen level up.
                 Oxygen in water helps flavour!
             </li>
@@ -59,9 +60,12 @@
         </ol>
     </section>
     <footer>
-        Copyright: Aman &copy;2022
+       <p> Copyright: Aman &copy;2022</p> 
     </footer>
+    </div>
     <script src="main.js"></script>
+ 
+ 
 </body>
 
 </html>
